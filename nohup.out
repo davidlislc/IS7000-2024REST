@@ -1,0 +1,888 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.is70002024.market:is-70002024 >------------------
+[INFO] Building Is 70002024 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ is-70002024 >>>
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-versions) @ is-70002024 ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-dependencyConvergence) @ is-70002024 ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
+[INFO] 
+[INFO] --- properties:1.2.1:read-project-properties (default) @ is-70002024 ---
+[INFO] Loading 34 properties from File: /home/ec2-user/myApp/sonar-project.properties
+[INFO] 
+[INFO] --- jacoco:0.8.12:prepare-agent (pre-unit-tests) @ is-70002024 ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/home/ec2-user/myApp/target/jacoco.exec -Djava.security.egd=file:/dev/./urandom -Xmx1G
+[INFO] 
+[INFO] --- spotless:2.43.0:apply (spotless) @ is-70002024 ---
+[INFO] Spotless.Java is keeping 108 files clean - 0 were changed to be clean, 0 were already clean, 108 were skipped because caching determined they were already clean
+[INFO] 
+[INFO] --- spring-boot:3.3.5:build-info (build-info) @ is-70002024 ---
+[INFO] 
+[INFO] --- checksum:1.11:files (create-pre-compiled-webapp-checksum) @ is-70002024 ---
+[INFO] 
+[INFO] --- antrun:3.1.0:run (eval-frontend-checksum) @ is-70002024 ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- frontend:1.15.1:install-node-and-npm (install-node-and-npm) @ is-70002024 ---
+[INFO] Node v22.11.0 is already installed.
+[INFO] NPM 10.9.0 is already installed.
+[INFO] 
+[INFO] --- frontend:1.15.1:npm (npm install) @ is-70002024 ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- frontend:1.15.1:npm (webapp build dev) @ is-70002024 ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ is-70002024 ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] Copying 13 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ is-70002024 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- checksum:1.11:files (create-compiled-webapp-checksum) @ is-70002024 ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ is-70002024 ---
+[INFO] Copying 11 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ is-70002024 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ is-70002024 <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ is-70002024 ---
+[INFO] Attaching agents: []
+[2m2024-11-20T04:17:56.113Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[kground-preinit][0;39m [36morg.jboss.logging                       [0;39m [2m:[0;39m Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+
+  [32m      ██╗[36m ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+  [32m      ██║[36m ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+  [32m      ██║[36m ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  [32m██╗   ██║[36m ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  [32m╚██████╔╝[36m ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+  [32m ╚═════╝ [36m ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+[94m:: JHipster 🤓  :: Running Spring Boot 3.3.5 :: Startup profile(s) dev ::
+:: https://www.jhipster.tech ::[39m
+
+[2m2024-11-20T04:17:56.205Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Starting Is70002024App using Java 22.0.2 with PID 160086 (/home/ec2-user/myApp/target/classes started by root in /home/ec2-user/myApp) 
+[2m2024-11-20T04:17:56.205Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Running with Spring Boot v3.3.5, Spring v6.1.14 
+[2m2024-11-20T04:17:56.206Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m The following 2 profiles are active: "dev", "api-docs" 
+[2m2024-11-20T04:17:56.278Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 160110, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:75)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerCommand(DockerCli.java:135)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:129)
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228)
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:17:56.294Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 160125, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:75)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerComposeCommand(DockerCli.java:155)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:130)
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228)
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:17:56.355Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 160139, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:75)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerComposeCommand(DockerCli.java:165)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:130)
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228)
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:17:56.527Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 160146, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.lambda$new$0(DefaultDockerCompose.java:46)
+	at org.springframework.boot.docker.compose.core.DockerHost.fromCurrentContext(DockerHost.java:102)
+	at org.springframework.boot.docker.compose.core.DockerHost.get(DockerHost.java:88)
+	at org.springframework.boot.docker.compose.core.DockerHost.get(DockerHost.java:73)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.<init>(DefaultDockerCompose.java:46)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:93)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:17:56.553Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 160154, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.hasDefinedServices(DefaultDockerCompose.java:71)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:112)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:17:56.601Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 160170, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.runComposePs(DefaultDockerCompose.java:112)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.getRunningServices(DefaultDockerCompose.java:76)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:121)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:17:56.651Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 160187, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.inspect(DefaultDockerCompose.java:93)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.getRunningServices(DefaultDockerCompose.java:82)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:121)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:17:59.104Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Registering CORS filter 
+[2m2024-11-20T04:17:59.157Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Web application configuration, using profiles: dev 
+[2m2024-11-20T04:17:59.157Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Web application fully configured 
+[2m2024-11-20T04:17:59.476Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.AsyncConfiguration    [0;39m [2m:[0;39m Creating Async Task Executor 
+[2m2024-11-20T04:17:59.564Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.m.config.LiquibaseConfiguration     [0;39m [2m:[0;39m Configuring Liquibase 
+[2m2024-11-20T04:17:59.902Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[70002024-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Starting Liquibase asynchronously, your database might not be ready at startup! 
+[2m2024-11-20T04:18:00.820Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:18:01.052Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:18:01.054Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:18:01.055Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:18:01.086Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:18:01.190Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[70002024-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Liquibase has updated your database in 1286 ms 
+[2m2024-11-20T04:18:03.945Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi customizer 
+[2m2024-11-20T04:18:03.979Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi default group 
+[2m2024-11-20T04:18:03.985Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi management group 
+[2m2024-11-20T04:18:04.203Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mi.m.c.u.i.logging.InternalLoggerFactory [0;39m [2m:[0;39m Using SLF4J as the default logging framework 
+[2m2024-11-20T04:18:04.651Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.jboss.threads                       [0;39m [2m:[0;39m JBoss Threads version 3.5.0.Final 
+[2m2024-11-20T04:18:04.726Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Started Is70002024App in 9.121 seconds (process running for 9.537) 
+[2m2024-11-20T04:18:04.732Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m 
+----------------------------------------------------------
+	Application 'is70002024' is running! Access URLs:
+	Local: 		http://localhost:80/
+	External: 	http://172.31.17.197:80/
+	Profile(s): 	[dev, api-docs]
+---------------------------------------------------------- 
+[2m2024-11-20T04:21:33.428Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36m.m.m.a.ExceptionHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/content/css/loading.css.] 
+
+  [32m      ██╗[36m ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+  [32m      ██║[36m ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+  [32m      ██║[36m ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  [32m██╗   ██║[36m ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  [32m╚██████╔╝[36m ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+  [32m ╚═════╝ [36m ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+[94m:: JHipster 🤓  :: Running Spring Boot 3.3.5 :: Startup profile(s) dev ::
+:: https://www.jhipster.tech ::[39m
+
+[2m2024-11-20T04:27:22.178Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Starting Is70002024App using Java 22.0.2 with PID 160086 (/home/ec2-user/myApp/target/classes started by root in /home/ec2-user/myApp) 
+[2m2024-11-20T04:27:22.179Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Running with Spring Boot v3.3.5, Spring v6.1.14 
+[2m2024-11-20T04:27:22.180Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m The following 2 profiles are active: "dev", "api-docs" 
+[2m2024-11-20T04:27:22.190Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 163463, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.lambda$new$0(DefaultDockerCompose.java:46)
+	at org.springframework.boot.docker.compose.core.DockerHost.fromCurrentContext(DockerHost.java:102)
+	at org.springframework.boot.docker.compose.core.DockerHost.get(DockerHost.java:88)
+	at org.springframework.boot.docker.compose.core.DockerHost.get(DockerHost.java:73)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.<init>(DefaultDockerCompose.java:46)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:93)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:27:22.203Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 163472, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.hasDefinedServices(DefaultDockerCompose.java:71)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:112)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:27:22.255Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 163489, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.runComposePs(DefaultDockerCompose.java:112)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.getRunningServices(DefaultDockerCompose.java:76)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:121)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:27:22.312Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 163505, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.inspect(DefaultDockerCompose.java:93)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.getRunningServices(DefaultDockerCompose.java:82)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:121)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:27:23.566Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Registering CORS filter 
+[2m2024-11-20T04:27:23.594Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Web application configuration, using profiles: dev 
+[2m2024-11-20T04:27:23.594Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Web application fully configured 
+[2m2024-11-20T04:27:23.686Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.AsyncConfiguration    [0;39m [2m:[0;39m Creating Async Task Executor 
+[2m2024-11-20T04:27:23.770Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.m.config.LiquibaseConfiguration     [0;39m [2m:[0;39m Configuring Liquibase 
+[2m2024-11-20T04:27:23.826Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[70002024-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Starting Liquibase asynchronously, your database might not be ready at startup! 
+[2m2024-11-20T04:27:24.021Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:27:24.088Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:27:24.088Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:27:24.089Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:27:24.090Z[0;39m [33m WARN[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:27:24.299Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[70002024-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Liquibase has updated your database in 472 ms 
+[2m2024-11-20T04:27:25.538Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi customizer 
+[2m2024-11-20T04:27:25.547Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi default group 
+[2m2024-11-20T04:27:25.549Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi management group 
+[2m2024-11-20T04:27:25.954Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Started Is70002024App in 3.915 seconds (process running for 570.765) 
+[2m2024-11-20T04:27:25.961Z[0;39m [32m INFO[0;39m [35m160086[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m 
+----------------------------------------------------------
+	Application 'is70002024' is running! Access URLs:
+	Local: 		http://localhost:80/
+	External: 	http://172.31.17.197:80/
+	Profile(s): 	[dev, api-docs]
+---------------------------------------------------------- 
+[2m2024-11-20T04:27:48.145Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[SIGTERM handler][0;39m [36mjava.lang.Runtime                       [0;39m [2m:[0;39m Runtime.exit() called with status: 143 
+
+java.lang.Throwable: Runtime.exit(143)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179)
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160)
+	at java.base/java.lang.Terminator$1.handle(Terminator.java:51)
+	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+[2m2024-11-20T04:27:48.146Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[SIGTERM handler][0;39m [36mjava.lang.Runtime                       [0;39m [2m:[0;39m Runtime.exit() called with status: 143 
+
+java.lang.Throwable: Runtime.exit(143)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179)
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160)
+	at java.base/java.lang.Terminator$1.handle(Terminator.java:51)
+	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+[2m2024-11-20T04:27:48.146Z[0;39m [32mDEBUG[0;39m [35m160086[0;39m [2m---[0;39m [2m[SIGTERM handler][0;39m [36mjava.lang.Runtime                       [0;39m [2m:[0;39m Runtime.exit() called with status: 143 
+
+java.lang.Throwable: Runtime.exit(143)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179)
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160)
+	at java.base/java.lang.Terminator$1.handle(Terminator.java:51)
+	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.is70002024.market:is-70002024 >------------------
+[INFO] Building Is 70002024 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ is-70002024 >>>
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-versions) @ is-70002024 ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-dependencyConvergence) @ is-70002024 ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
+[INFO] 
+[INFO] --- properties:1.2.1:read-project-properties (default) @ is-70002024 ---
+[INFO] Loading 34 properties from File: /home/ec2-user/myApp/sonar-project.properties
+[INFO] 
+[INFO] --- jacoco:0.8.12:prepare-agent (pre-unit-tests) @ is-70002024 ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/home/ec2-user/myApp/target/jacoco.exec -Djava.security.egd=file:/dev/./urandom -Xmx1G
+[INFO] 
+[INFO] --- spotless:2.43.0:apply (spotless) @ is-70002024 ---
+[INFO] Spotless.Java is keeping 108 files clean - 0 were changed to be clean, 0 were already clean, 108 were skipped because caching determined they were already clean
+[INFO] 
+[INFO] --- spring-boot:3.3.5:build-info (build-info) @ is-70002024 ---
+[INFO] 
+[INFO] --- checksum:1.11:files (create-pre-compiled-webapp-checksum) @ is-70002024 ---
+[INFO] 
+[INFO] --- antrun:3.1.0:run (eval-frontend-checksum) @ is-70002024 ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- frontend:1.15.1:install-node-and-npm (install-node-and-npm) @ is-70002024 ---
+[INFO] Node v22.11.0 is already installed.
+[INFO] NPM 10.9.0 is already installed.
+[INFO] 
+[INFO] --- frontend:1.15.1:npm (npm install) @ is-70002024 ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- frontend:1.15.1:npm (webapp build dev) @ is-70002024 ---
+[INFO] Skipping execution.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ is-70002024 ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] Copying 13 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ is-70002024 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- checksum:1.11:files (create-compiled-webapp-checksum) @ is-70002024 ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ is-70002024 ---
+[INFO] Copying 11 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ is-70002024 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ is-70002024 <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ is-70002024 ---
+[INFO] Attaching agents: []
+
+  [32m      ██╗[36m ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+  [32m      ██║[36m ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+  [32m      ██║[36m ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  [32m██╗   ██║[36m ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  [32m╚██████╔╝[36m ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+  [32m ╚═════╝ [36m ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+[94m:: JHipster 🤓  :: Running Spring Boot 3.3.5 :: Startup profile(s) dev ::
+:: https://www.jhipster.tech ::[39m
+
+[2m2024-11-20T04:33:56.177Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[kground-preinit][0;39m [36morg.jboss.logging                       [0;39m [2m:[0;39m Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property 
+[2m2024-11-20T04:33:56.240Z[0;39m [32m INFO[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Starting Is70002024App using Java 22.0.2 with PID 5879 (/home/ec2-user/myApp/target/classes started by root in /home/ec2-user/myApp) 
+[2m2024-11-20T04:33:56.240Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Running with Spring Boot v3.3.5, Spring v6.1.14 
+[2m2024-11-20T04:33:56.242Z[0;39m [32m INFO[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m The following 2 profiles are active: "dev", "api-docs" 
+[2m2024-11-20T04:33:56.347Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 5903, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:75)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerCommand(DockerCli.java:135)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:129)
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228)
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:33:56.391Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 5918, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:75)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerComposeCommand(DockerCli.java:155)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:130)
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228)
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:33:56.460Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 5932, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:75)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerComposeCommand(DockerCli.java:165)
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:130)
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228)
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:33:56.556Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 5938, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.lambda$new$0(DefaultDockerCompose.java:46)
+	at org.springframework.boot.docker.compose.core.DockerHost.fromCurrentContext(DockerHost.java:102)
+	at org.springframework.boot.docker.compose.core.DockerHost.get(DockerHost.java:88)
+	at org.springframework.boot.docker.compose.core.DockerHost.get(DockerHost.java:73)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.<init>(DefaultDockerCompose.java:46)
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:93)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:33:56.581Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 5946, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.hasDefinedServices(DefaultDockerCompose.java:71)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:112)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:33:56.634Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 5962, dir: null, cmd: "docker-compose" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.runComposePs(DefaultDockerCompose.java:112)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.getRunningServices(DefaultDockerCompose.java:76)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:121)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:33:56.678Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mjava.lang.ProcessBuilder                [0;39m [2m:[0;39m ProcessBuilder.start(): pid: 5978, dir: null, cmd: "docker" 
+
+java.lang.RuntimeException: ProcessBuilder.start() debug
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1147)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.startProcess(ProcessRunner.java:106)
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:88)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.inspect(DefaultDockerCompose.java:93)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.getRunningServices(DefaultDockerCompose.java:82)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:121)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.is70002024.market.Is70002024App.main(Is70002024App.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+
+[2m2024-11-20T04:33:59.007Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Registering CORS filter 
+[2m2024-11-20T04:33:59.047Z[0;39m [32m INFO[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Web application configuration, using profiles: dev 
+[2m2024-11-20T04:33:59.047Z[0;39m [32m INFO[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.WebConfigurer         [0;39m [2m:[0;39m Web application fully configured 
+[2m2024-11-20T04:33:59.366Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.market.config.AsyncConfiguration    [0;39m [2m:[0;39m Creating Async Task Executor 
+[2m2024-11-20T04:33:59.445Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.i.m.config.LiquibaseConfiguration     [0;39m [2m:[0;39m Configuring Liquibase 
+[2m2024-11-20T04:33:59.787Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[70002024-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Starting Liquibase asynchronously, your database might not be ready at startup! 
+[2m2024-11-20T04:34:00.612Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:34:00.824Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:34:00.825Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:34:00.826Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:34:00.857Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.orm.incubating            [0;39m [2m:[0;39m HHH90006001: Encountered incubating setting [hibernate.type.preferred_instant_jdbc_type].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details. 
+[2m2024-11-20T04:34:01.084Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[70002024-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Liquibase has updated your database in 1295 ms 
+[2m2024-11-20T04:34:03.576Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi customizer 
+[2m2024-11-20T04:34:03.591Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi default group 
+[2m2024-11-20T04:34:03.597Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.a.JHipsterSpringDocGroupsConfiguration[0;39m [2m:[0;39m Initializing JHipster OpenApi management group 
+[2m2024-11-20T04:34:03.806Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mi.m.c.u.i.logging.InternalLoggerFactory [0;39m [2m:[0;39m Using SLF4J as the default logging framework 
+[2m2024-11-20T04:34:04.224Z[0;39m [32m INFO[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.jboss.threads                       [0;39m [2m:[0;39m JBoss Threads version 3.5.0.Final 
+[2m2024-11-20T04:34:04.291Z[0;39m [32m INFO[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m Started Is70002024App in 8.594 seconds (process running for 9.22) 
+[2m2024-11-20T04:34:04.295Z[0;39m [32m INFO[0;39m [35m5879[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.is70002024.market.Is70002024App     [0;39m [2m:[0;39m 
+----------------------------------------------------------
+	Application 'is70002024' is running! Access URLs:
+	Local: 		http://localhost:80/
+	External: 	http://172.31.17.197:80/
+	Profile(s): 	[dev, api-docs]
+---------------------------------------------------------- 
+[2m2024-11-20T04:36:58.540Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.i.m.web.rest.AuthenticateController   [0;39m [2m:[0;39m Enter: authorize() with argument[s] = [LoginVM{username='user', rememberMe=false}] 
+[2m2024-11-20T04:36:58.682Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.i.m.security.DomainUserDetailsService [0;39m [2m:[0;39m Authenticating user 
+[2m2024-11-20T04:36:58.818Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36morg.hibernate.SQL                       [0;39m [2m:[0;39m select u1_0.id,u1_0.activated,u1_0.activation_key,a1_0.user_id,a1_1.name,u1_0.created_by,u1_0.created_date,u1_0.email,u1_0.first_name,u1_0.image_url,u1_0.lang_key,u1_0.last_modified_by,u1_0.last_modified_date,u1_0.last_name,u1_0.login,u1_0.password_hash,u1_0.reset_date,u1_0.reset_key from jhi_user u1_0 left join jhi_user_authority a1_0 on u1_0.id=a1_0.user_id left join jhi_authority a1_1 on a1_1.name=a1_0.authority_name where u1_0.login=? 
+[2m2024-11-20T04:36:59.038Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.i.m.web.rest.AuthenticateController   [0;39m [2m:[0;39m Exit: authorize() with result = <200 OK OK,org.is70002024.market.web.rest.AuthenticateController$JWTToken@30e1533c,[Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzMyMTYzODE4LCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNzMyMDc3NDE4fQ.bzrXDnML0zORNJOs6TCfDSM4nldfD4md2YVAfuD3pmdak_9nfIINhzGvz4Q-wLRh3THNbM2yZka6xcmGI3eXDA"]> 
+[2m2024-11-20T04:36:59.222Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.i.market.web.rest.AccountResource     [0;39m [2m:[0;39m Enter: getAccount() with argument[s] = [] 
+[2m2024-11-20T04:36:59.223Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.is70002024.market.service.UserService [0;39m [2m:[0;39m Enter: getUserWithAuthorities() with argument[s] = [] 
+[2m2024-11-20T04:36:59.225Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.is70002024.market.service.UserService [0;39m [2m:[0;39m Exit: getUserWithAuthorities() with result = Optional[User{login='user', firstName='User', lastName='User', email='user@localhost', imageUrl='', activated='true', langKey='en', activationKey='null'}] 
+[2m2024-11-20T04:36:59.230Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.i.market.web.rest.AccountResource     [0;39m [2m:[0;39m Exit: getAccount() with result = AdminUserDTO{login='user', firstName='User', lastName='User', email='user@localhost', imageUrl='', activated=true, langKey='en', createdBy=system, createdDate=null, lastModifiedBy='system', lastModifiedDate=null, authorities=[ROLE_USER]} 
+[2m2024-11-20T04:38:37.488Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.i.market.web.rest.AccountResource     [0;39m [2m:[0;39m Enter: getAccount() with argument[s] = [] 
+[2m2024-11-20T04:38:37.491Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.is70002024.market.service.UserService [0;39m [2m:[0;39m Enter: getUserWithAuthorities() with argument[s] = [] 
+[2m2024-11-20T04:38:37.491Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.is70002024.market.service.UserService [0;39m [2m:[0;39m Exit: getUserWithAuthorities() with result = Optional[User{login='user', firstName='User', lastName='User', email='user@localhost', imageUrl='', activated='true', langKey='en', activationKey='null'}] 
+[2m2024-11-20T04:38:37.493Z[0;39m [32mDEBUG[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.i.market.web.rest.AccountResource     [0;39m [2m:[0;39m Exit: getAccount() with result = AdminUserDTO{login='user', firstName='User', lastName='User', email='user@localhost', imageUrl='', activated=true, langKey='en', createdBy=system, createdDate=null, lastModifiedBy='system', lastModifiedDate=null, authorities=[ROLE_USER]} 
+[2m2024-11-20T14:16:04.124Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36mo.s.web.servlet.PageNotFound            [0;39m [2m:[0;39m Request method 'POST' is not supported 
+[2m2024-11-20T14:16:04.146Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36m.m.m.a.ExceptionHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported] 
+[2m2024-11-20T14:16:27.434Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-3][0;39m [36m.m.m.a.ExceptionHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource config.js.] 
+[2m2024-11-20T15:38:36.178Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-2][0;39m [36mo.s.web.servlet.PageNotFound            [0;39m [2m:[0;39m Request method 'POST' is not supported 
+[2m2024-11-20T15:38:36.180Z[0;39m [33m WARN[0;39m [35m5879[0;39m [2m---[0;39m [2m[  XNIO-1 task-2][0;39m [36m.m.m.a.ExceptionHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported] 
