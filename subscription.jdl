@@ -1,0 +1,20 @@
+entity Subscriptions{
+  name String required 
+  subdate LocalDate required
+  status String required
+}
+
+entity Service {
+name String required unique
+level String required
+interval Duration required
+price Double required
+}
+
+
+relationship ManyToOne {
+  Subscriptions{user(login)} to User with builtInEntity
+  Subscriptions{service(name)} to Service 
+}
+paginate Subscriptions with pagination
+paginate Service with pagination
