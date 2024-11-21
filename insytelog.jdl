@@ -1,0 +1,11 @@
+entity InsyteLog {
+  name String required 
+  activity String required
+  rundate LocalDate required
+  
+}
+
+relationship ManyToOne {
+  InsyteLog{user(login)} to User with builtInEntity
+}
+paginate InsyteLog with pagination

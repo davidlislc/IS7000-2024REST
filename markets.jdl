@@ -1,0 +1,38 @@
+
+entity MarketSector {
+  name SECTOR required 
+  price Double required
+  change Double required
+  marketdate LocalDate required
+}
+
+entity MarketOverview{
+name String required
+price Double required
+change Double required
+ticker INDEX required
+marketdate LocalDate required
+}
+
+enum INDEX{
+SPY,
+DOW,
+IWM,
+QQQ
+}
+enum SECTOR{
+XLC,
+XLY,
+XLP,
+XLE,
+XLF,
+XLV,
+XLI,
+XLB,
+XLRE,
+XLK,
+XLU
+}
+
+paginate MarketSector, MarketOverview with pagination
+

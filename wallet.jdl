@@ -1,0 +1,12 @@
+entity Wallet {
+  name String required 
+  credit Double required
+  giftcard Double required
+}
+
+
+relationship OneToOne {
+  Wallet{user(login)} to User with builtInEntity
+}
+
+paginate Wallet with pagination

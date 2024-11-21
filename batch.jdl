@@ -1,0 +1,18 @@
+entity Batch {
+  name String required 
+  job String required
+  rundate LocalDate required
+  batchstatus Status required
+}
+
+enum Status {
+  PENDING,
+  RUNNING,
+  FAILED,
+  DONE
+}
+
+relationship ManyToOne {
+  Batch{user(login)} to User with builtInEntity
+}
+paginate Batch with pagination

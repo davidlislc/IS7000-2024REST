@@ -1,0 +1,12 @@
+entity Transaction {
+  name String required 
+  transdate LocalDate required
+  type String required
+  amount Double required
+}
+
+
+relationship ManyToOne {
+  Transaction{user(login)} to User with builtInEntity
+}
+paginate Transaction with pagination
