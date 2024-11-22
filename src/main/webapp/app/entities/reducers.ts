@@ -6,6 +6,7 @@ import batch from 'app/entities/batch/batch.reducer';
 import insyteLog from 'app/entities/insyte-log/insyte-log.reducer';
 import marketSector from 'app/entities/market-sector/market-sector.reducer';
 import marketOverview from 'app/entities/market-overview/market-overview.reducer';
+import giftcard from 'app/entities/giftcard/giftcard.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const entitiesReducers = {
@@ -17,6 +18,7 @@ const entitiesReducers = {
   insyteLog,
   marketSector,
   marketOverview,
+  giftcard,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
 };
 

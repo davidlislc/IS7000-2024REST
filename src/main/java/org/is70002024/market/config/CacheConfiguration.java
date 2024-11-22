@@ -58,6 +58,7 @@ public class CacheConfiguration {
             createCache(cm, org.is70002024.market.domain.InsyteLog.class.getName());
             createCache(cm, org.is70002024.market.domain.MarketSector.class.getName());
             createCache(cm, org.is70002024.market.domain.MarketOverview.class.getName());
+            createCache(cm, org.is70002024.market.domain.Giftcard.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

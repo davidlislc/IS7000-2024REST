@@ -1,0 +1,12 @@
+entity Giftcard {
+  name String required 
+  giftcardamount Double required
+  addDate LocalDate required
+}
+
+
+relationship ManyToOne {
+  Giftcard{user(login)} to User with builtInEntity
+}
+
+paginate Giftcard with pagination

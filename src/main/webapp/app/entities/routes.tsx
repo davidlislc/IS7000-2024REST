@@ -11,6 +11,7 @@ import Batch from './batch';
 import InsyteLog from './insyte-log';
 import MarketSector from './market-sector';
 import MarketOverview from './market-overview';
+import Giftcard from './giftcard';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
@@ -26,6 +27,7 @@ export default () => {
         <Route path="insyte-log/*" element={<InsyteLog />} />
         <Route path="market-sector/*" element={<MarketSector />} />
         <Route path="market-overview/*" element={<MarketOverview />} />
+        <Route path="giftcard/*" element={<Giftcard />} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </ErrorBoundaryRoutes>
     </div>
