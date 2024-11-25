@@ -38,7 +38,7 @@ public class AdminUserDTO implements Serializable {
 
     private boolean activated = false;
 
-    @Size(min = 2, max = 10)
+    //@Size(min = 2, max = 10)
     private String langKey = "en";
 
     private String createdBy;
