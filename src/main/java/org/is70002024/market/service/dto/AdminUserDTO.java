@@ -63,7 +63,7 @@ public class AdminUserDTO implements Serializable {
         this.email = user.getEmail();
         this.activated = user.isActivated();
         this.imageUrl = user.getImageUrl();
-        this.langKey = user.getLangKey();
+        this.langKey = "en";
         this.createdBy = user.getCreatedBy();
         this.createdDate = user.getCreatedDate();
         this.lastModifiedBy = user.getLastModifiedBy();
@@ -132,7 +132,7 @@ public class AdminUserDTO implements Serializable {
     }
 
     public void setLangKey(String langKey) {
-        this.langKey = langKey;
+        this.langKey = "en";
     }
 
     public String getCreatedBy() {
